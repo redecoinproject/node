@@ -12,7 +12,7 @@ After=network.target
 
 [Service]
 User=root
-ExecStart=/usr/local/bin/geth --http --syncmode "full" --snapshot=false --http.api "personal,eth,net,web3,personal,admin,miner,txpool,debug" --ethstats \"$HOSTNAME:Redev2@network.redecoin.eu:3000"
+ExecStart=/usr/local/bin/start-geth.sh
 Restart=always
 RestartSec=3
 LimitNOFILE=4096
@@ -20,6 +20,17 @@ LimitNOFILE=4096
 [Install]
 WantedBy=multi-user.target
 EOF
+
+# Create a script to start geth with the desired parameters
+cat <<EOF > /usr/local/bin/start-geth.sh
+#!/bin/bash
+
+HOSTNAME=\$(hostname)
+/usr/local/bin/geth --http --syncmode "full" --snapshot=false --http.api "personal,eth,net,web3,personal,admin,miner,txpool,debug" --ethstats "\$HOSTNAME:Redev2@network.redecoin.eu:3000"
+EOF
+
+# Make the start-geth.sh script executable
+chmod +x /usr/local/bin/start-geth.sh
 
 # Reload systemd
 systemctl daemon-reload
@@ -43,3 +54,4 @@ sysctl -p
 
 # Finish
 echo "Geth has been added to autostart, and a swap file has been created."
+
