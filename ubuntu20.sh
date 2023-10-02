@@ -15,7 +15,7 @@ After=network.target
 
 [Service]
 User=root
-ExecStart=/usr/local/bin/geth --http --syncmode "full" --snapshot=false --http.api "personal,eth,net,web3,personal,admin,miner,txpool,debug" --ethstats \$HOSTNAME:Redev2@network.redecoin.eu:3000 console
+ExecStart=/usr/local/bin/geth --http --syncmode "full" --snapshot=false --http.api "personal,eth,net,web3,personal,admin,miner,txpool,debug" --ethstats \"$HOSTNAME:Redev2@network.redecoin.eu:3000"
 Restart=always
 RestartSec=3
 LimitNOFILE=4096
