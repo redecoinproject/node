@@ -37,21 +37,10 @@ systemctl daemon-reload
 
 # Start geth
 systemctl start geth
-
-# Create a 1 GB swap file
-fallocate -l 1G /swapfile
-chmod 600 /swapfile
-mkswap /swapfile
-swapon /swapfile
-
-# Add swap to /etc/fstab to mount it at system startup
-echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab
-
-# Disable swappiness
-echo 'vm.swappiness=10' | tee -a /etc/sysctl.conf
-echo 'vm.vfs_cache_pressure=50' | tee -a /etc/sysctl.conf
-sysctl -p
-
+# status
+systemctl status geth
 # Finish
 echo "Geth has been added to autostart, and a swap file has been created."
+echo "node redev2 install done"
+
 
