@@ -40,7 +40,8 @@ systemctl start geth
 
 # status
 systemctl status geth
+
 # Finish
-echo "Geth has been added to autostart, and a swap file has been created."
+echo "Geth has been added to autostart."
 echo "node redev2 install done"
 
