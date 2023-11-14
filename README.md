@@ -14,10 +14,6 @@ Ubuntu 23.04
 ```shell
 curl -sSL https://github.com/redecoinproject/node/raw/master/ubuntu23.04.sh | bash
 ```
-Raspberry Pi 4 arm
-```shell
-curl -sSL https://github.com/redecoinproject/node/raw/master/arm.sh | bash
-```
 
 Make sure to run the script as an administrator if required by your system.
 
