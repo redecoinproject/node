@@ -10,7 +10,7 @@ Ubuntu 20.04
 ```shell
 curl -sSL https://github.com/redecoinproject/node/raw/master/ubuntu20.sh | bash
 ```
-Ubuntu 23.04
+Ubuntu 22.04
 ```shell
 curl -sSL https://github.com/redecoinproject/node/raw/master/ubuntu23.04.sh | bash
 ```
