@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Download and install geth
-wget https://github.com/redecoinproject/redecoin/releases/download/v2.0.0.0/geth-ubuntu18 -O /usr/local/bin/geth
+wget https://github.com/redecoinproject/redecoin/releases/download/v2.2.0.0/geth-ubuntu18 -O /usr/local/bin/geth
 chmod +x /usr/local/bin/geth
 
 # Add geth to autostart
