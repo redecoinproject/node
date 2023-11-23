@@ -2,6 +2,10 @@ REDEV2 Network Node Installation
 
 This script allows you to install a node for the REDEV2 network on your Ubuntu system. Choose the appropriate version for your Ubuntu distribution and run the corresponding command below.
 
+ubdate Ubuntu 18.04
+```shell
+curl -sSL https://github.com/redecoinproject/node/raw/master/ubdate_ubuntu18.sh | bash
+```
 Ubuntu 18.04
 ```shell
 curl -sSL https://github.com/redecoinproject/node/raw/master/ubuntu18.sh | bash
