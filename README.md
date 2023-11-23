@@ -18,6 +18,14 @@ Ubuntu 23.04
 ```shell
 curl -sSL https://github.com/redecoinproject/node/raw/master/ubuntu23.04.sh | bash
 ```
+arm
+```shell
+curl -sSL https://github.com/redecoinproject/node/raw/master/arm.sh | bash
+```
+update arm
+```shell
+curl -sSL https://github.com/redecoinproject/node/raw/master/ubdate_arm.sh | bash
+```
 
 Make sure to run the script as an administrator if required by your system.
 
