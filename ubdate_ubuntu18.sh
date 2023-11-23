@@ -51,3 +51,4 @@ systemctl status geth
 # Finish
 echo "Geth update has been added to autostart"
 echo "Node redev2 ubdate done"
+
