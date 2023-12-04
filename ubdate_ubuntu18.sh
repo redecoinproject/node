@@ -33,7 +33,7 @@ cat <<EOF > /usr/local/bin/start-geth.sh
 #!/bin/bash
 
 HOSTNAME=\$(hostname)
-/usr/local/bin/geth --port 30304 --http --syncmode "full" --snapshot=false --http.api "personal,eth,net,web3,personal,admin,miner,txpool,debug" --ethstats "\$HOSTNAME:Redev2@network.redecoin.eu:3000"
+/usr/local/bin/geth --maxpeers 250 --port 30304 --http --syncmode "full" --snapshot=false --http.api "personal,eth,net,web3,personal,admin,miner,txpool,debug" --ethstats "\$HOSTNAME:Redev2@network.redecoin.eu:3000"
 EOF
 
 # Make the start-geth.sh script executable
