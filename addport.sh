@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Orcale vpn add port node redev2
 # Usage commands:
+# ./addport.sh 8545 tcp   # To open TCP only
+# ./addport.sh 8545 udp   # To open UDP only
 # ./addport.sh 30304 tcp   # To open TCP only
 # ./addport.sh 30304 udp   # To open UDP only
 # ./addport.sh 30304 both  # To open both TCP and UDP
@@ -39,3 +40,4 @@ sudo iptables-save > /etc/iptables/rules.v4
 # Verify if the rules were added
 echo "Current iptables rules for port $PORT:"
 sudo iptables -L | grep $PORT
+
