@@ -2,7 +2,7 @@
 sudo apt update
 sudo apt install curl wget screen -y
 # Download and install geth
-wget https://github.com/redecoinproject/redecoin/releases/download/v2.2.0.0/geth-ubuntu22 -O /usr/local/bin/geth
+wget https://github.com/redecoinproject/redecoin/releases/download/v3.0.0/geth -O /usr/local/bin/geth
 chmod +x /usr/local/bin/geth
 
 # Add geth to autostart
@@ -27,7 +27,7 @@ cat <<EOF > /usr/local/bin/start-geth.sh
 #!/bin/bash
 
 HOSTNAME=\$(hostname)
-/usr/local/bin/geth --maxpeers 250 --http --http.addr 0.0.0.0 --port 30304 --http.port 8545 --syncmode "full" --snapshot=false --http.api "personal,eth,net,web3,personal,admin,miner,txpool,debug" --ethstats "\$HOSTNAME:Redev2@network.redecoin.eu:3000"
+/usr/local/bin/geth --http --http.addr 0.0.0.0 --port 30304 --http.port 8545 --syncmode "full" --snapshot=false --http.api "personal,eth,net,web3,personal,admin,miner,txpool,debug" --ethstats "\$HOSTNAME:Redev2@network.redecoin.eu:3000"
 EOF
 
 # Make the start-geth.sh script executable
