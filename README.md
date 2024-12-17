@@ -4,7 +4,7 @@ This script allows you to install a node for the REDEV2 network on your Ubuntu s
 
 ubdate Ubuntu 18.04
 ```shell
-curl -sSL https://github.com/redecoinproject/node/raw/master/ubdate_ubuntu18.sh | bash
+curl -sSL https://github.com/redecoinproject/node/raw/master/nodeupdate.sh | bash
 ```
 Ubuntu 18.04
 ```shell
