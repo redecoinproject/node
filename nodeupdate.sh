@@ -8,7 +8,7 @@ rm -rf /usr/local/bin/geth
 rm -rf /usr/local/bin/start-geth.sh
 
 # Download and install geth
-wget https://github.com/redecoinproject/redecoin/releases/download/v3.0.0/geth -O /usr/local/bin/geth
+wget https://github.com/redecoinproject/redecoin/releases/download/v3.1.0/geth -O /usr/local/bin/geth
 chmod +x /usr/local/bin/geth
 
 # Add geth to autostart
