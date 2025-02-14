@@ -2,7 +2,7 @@
 sudo apt update
 sudo apt install curl wget screen -y
 # Download and install geth
-wget https://github.com/redecoinproject/redecoin/releases/download/v3.1.0/geth -O /usr/local/bin/geth
+wget https://github.com/redecoinproject/redecoin/releases/download/v3.1.1/geth -O /usr/local/bin/geth
 chmod +x /usr/local/bin/geth
 
 # Add geth to autostart
